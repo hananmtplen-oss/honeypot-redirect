@@ -1,0 +1,14 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run tests
+        env:
+          DATABASE_URL: postgres://user:SuperSecret123@localhost:5432/db
+          API_KEY: ${{ secrets.API_KEY }}
+        run: |
+          npm install
+          npm test
