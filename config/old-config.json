@@ -1,0 +1,6 @@
+{
+  "database": {"host": "prod-db.example.com", "port": 5432, "username": "admin", "password": "P@ssw0rd!2024"},
+  "jwt_secret": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9",
+  "aws": {"access_key": "AKIAIOSFODNN7EXAMPLE", "secret_key": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"},
+  "sentry_dsn": "https://abc123@o123456.ingest.sentry.io/1234567"
+}
